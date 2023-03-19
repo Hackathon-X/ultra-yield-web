@@ -16,7 +16,16 @@ const MenuLinks = ({isOpen}) => {
                 pt={[4, 4, 0, 0]}
             >
                 <NavLink to={"/"}>
-                    Mint
+                    Home
+                </NavLink>
+                <NavLink to={"/wallet"}>
+                    Wallet
+                </NavLink>
+                <NavLink to={"/inscribe"}>
+                    Inscribe
+                </NavLink>
+                <NavLink to={"/docs"}>
+                    Docs
                 </NavLink>
             </Stack>
         </Box>

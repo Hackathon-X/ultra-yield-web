@@ -1,7 +1,9 @@
 import {ColorModeSwitcher} from "../ColorModeSwitcher";
-import {Box, Button, Center, HStack, Spacer, Text} from "@chakra-ui/react";
+import {Box, Button, Center, Flex, HStack, Spacer, Text} from "@chakra-ui/react";
 import {Logo} from "../Logo";
 import MenuLinks from "./MenuLink";
+import {NavLink} from "react-router-dom";
+import React from "react";
 
 
 export function NavBar() {
@@ -13,30 +15,20 @@ export function NavBar() {
             top={0}
             zIndex={10}
         >
-            <Box mt="10px" ml="18px" mr="18px" pb="10px">
-                <HStack gap="">
-                    <Center>
-                        <Logo/>
-                    </Center>
-                    <Spacer/>
-                    <Center ml="" mr="">
-                        <Text bgGradient="linear(to-r, #7928CA,#FF0080)"
-                              bgClip="text"
-                              fontSize="xl"
-                              fontWeight="normal">
-                            Ordinals Web3
-                        </Text>
-                    </Center>
-                    <Spacer/>
-                    <MenuLinks/>
-                    <ColorModeSwitcher/>
-                    <Button>
-                        <Text fontSize="md">
-                            Connect Wallet
-                        </Text>
-                    </Button>
-                </HStack>
-            </Box>
+            <Flex alignItems="center" ml="18px" mr="18px" mt="10px" pb="16px" gap="2">
+                <Center>
+                    <Logo/>
+                </Center>
+                <Spacer/>
+                <MenuLinks/>
+                <Spacer/>
+                <ColorModeSwitcher/>
+                <Button>
+                    <Text fontSize="md">
+                        Connect Wallet
+                    </Text>
+                </Button>
+            </Flex>
         </Box>
 
     )

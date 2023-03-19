@@ -1,7 +1,9 @@
-import {NavBar} from "../components/NavBar";
+import {Box, Container, Textarea} from "@chakra-ui/react";
 
 export function Home() {
     return (
-        <NavBar/>
+        <Box>
+
+        </Box>
     )
 }

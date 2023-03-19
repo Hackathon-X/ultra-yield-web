@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, keyframes, usePrefersReducedMotion} from '@chakra-ui/react';
-import logo from './logo.svg';
+import logo from './logo.png';
 
 const spin = keyframes`
   from {
@@ -12,11 +12,5 @@ const spin = keyframes`
 `;
 
 export const Logo = props => {
-    const prefersReducedMotion = usePrefersReducedMotion();
-
-    const animation = prefersReducedMotion
-        ? undefined
-        : `${spin} infinite 20s linear`;
-
-    return <Image borderRadius='full' boxSize='30px' animation={animation} src={logo} {...props} />;
+    return <Image  boxSize='30px' src={logo} {...props} />;
 };
