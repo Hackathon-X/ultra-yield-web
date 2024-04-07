@@ -20,7 +20,7 @@ export function NavBar() {
                     <Logo/>
                 </Center>
                 <Spacer/>
-                <MenuLinks/>
+                {/* <MenuLinks/> */}
                 <Spacer/>
                 <ColorModeSwitcher/>
                 <Button>

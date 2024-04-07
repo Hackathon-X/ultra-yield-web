@@ -16,9 +16,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<RootLayout/>}>
                     <Route index element={<Home/>}/>
-                    <Route path="wallet" element={<Wallet/>}/>
+                    {/* <Route path="wallet" element={<Wallet/>}/>
                     <Route path="inscribe" element={<Inscribe/>}/>
-                    <Route path="docs" element={<Docs/>}/>
+                    <Route path="docs" element={<Docs/>}/> */}
                 </Route>
             </Routes>
         </ChakraProvider>

@@ -12,5 +12,5 @@ const spin = keyframes`
 `;
 
 export const Logo = props => {
-    return <Image  boxSize='30px' src={logo} {...props} />;
+    return <Image  boxSize='100px' src={logo} {...props} />;
 };
