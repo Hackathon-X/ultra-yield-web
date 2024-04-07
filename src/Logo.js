@@ -12,5 +12,5 @@ const spin = keyframes`
 `;
 
 export const Logo = props => {
-    return <Image  boxSize='100px' src={logo} {...props} />;
+    return <Image  w={'10%'} src={process.env.PUBLIC_URL + 'ultraYield.png'} {...props} />;
 };
